@@ -32,7 +32,14 @@
   <url><loc>https://eastorchid.github.io/eastorchid/articles/growing/how-to-water-orchids-correctly.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eastorchid.github.io/eastorchid/articles/growing/chinese-orchid-cultivation-pots-and-media.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
+    <!-- World Orchids -->
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/phalaenopsis-orchids-care-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/dendrobium-orchids-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/cattleya-orchids-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
   <!-- Garden Articles -->
   <url><loc>https://eastorchid.github.io/eastorchid/articles/garden/creating-an-oriental-orchid-garden-at-home.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
 </urlset>
+
+
