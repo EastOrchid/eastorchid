@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} | Eastern Orchid</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <meta property="og:title" content="{{TITLE}} | Eastern Orchid">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://eastorchid.github.io/eastorchid/articles/{{PATH}}/">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="../index.html" class="site-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" stroke="#2d5a2d" stroke-width="1.5"/>
+          <path d="M14 4C10 9 8 14 8 18c0 2.5 1.5 5 6 6" stroke="#2d5a2d" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M14 4c4 5 6 10 6 14 0 2.5-1.5 5-6 6" stroke="#4a7c4a" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span>Eastern Orchid</span>
+      </a>
+      <button class="nav-toggle" aria-label="menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../orchids/">Orchid World</a></li>
+        <li><a href="../culture/">Orchid Culture</a></li>
+        <li><a href="../garden/">Garden Life</a></li>
+        <li><a href="../videos/">Videos</a></li>
+        <li><a href="../about/">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <article class="section">
+    <div class="container">
+      <div class="content" style="max-width:720px;">
+        <p class="breadcrumb" style="color:var(--text-light);font-size:0.85rem;margin-bottom:1rem;">
+          <a href="../index.html">Home</a> / <a href="../articles/">Articles</a> / {{CATEGORY}}
+        </p>
+        <h1>{{TITLE}}</h1>
+        <p style="color:var(--text-light);font-size:0.9rem;margin-bottom:2rem;">Published: {{DATE}} | Category: {{CATEGORY}}</p>
+        <div class="section-divider"></div>
+        
+        {{CONTENT}}
+        
+      </div>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Eastern Orchid</h3>
+        <p>Chinese Orchid Culture &amp; Garden Life</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../orchids/">Orchid World</a></li>
+          <li><a href="../culture/">Orchid Culture</a></li>
+          <li><a href="../garden/">Garden Life</a></li>
+          <li><a href="../videos/">Videos</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="../about/">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Eastern Orchid. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
