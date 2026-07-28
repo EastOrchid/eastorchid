@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://eastorchid.github.io/eastorchid/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://eastorchid.github.io/eastorchid/orchids/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eastorchid.github.io/eastorchid/culture/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://eastorchid.github.io/eastorchid/garden/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://eastorchid.github.io/eastorchid/videos/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://eastorchid.github.io/eastorchid/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+
+  <!-- Core Pages -->
+  <url><loc>https://eastorchid.github.io/eastorchid/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/orchids/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/culture/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/garden/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/videos/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/about/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- Articles Index -->
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Culture Articles -->
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/culture/the-spirit-of-chinese-orchids.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/culture/the-four-gentlemen-in-chinese-art.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/culture/orchids-in-chinese-history-and-traditional-culture.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/culture/what-is-guolan.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/culture/the-art-of-orchid-appreciation-in-china.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Species Articles -->
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/chinese-orchid-species-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/chunlan-cymbidium-goeringii.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/huilan-cymbidium-faberi.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/jianlan-cymbidium-ensifolium.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/hanlan-cymbidium-kanran.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/molan-cymbidium-sinense.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Growing Articles -->
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/growing/how-to-grow-orchids-at-home.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/growing/how-to-water-orchids-correctly.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/growing/chinese-orchid-cultivation-pots-and-media.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Garden Articles -->
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/garden/creating-an-oriental-orchid-garden-at-home.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
 </urlset>
