@@ -3,241 +3,250 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eastern Orchid | Chinese Orchid Culture &amp; Garden Life</title>
-  <meta name="description" content="Explore Chinese orchid culture, orchid history, species knowledge and garden inspiration with Eastern Orchid.">
-  <meta name="keywords" content="Chinese orchid, orchid culture, orchid species, cymbidium, orchid garden, Chinese gardening, orchid symbolism">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Eastern Orchid - Chinese Orchid Culture &amp; Garden Life">
-  <meta property="og:description" content="Discover the world of Chinese orchids — from ancient culture and symbolism to modern gardening.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://eastorchid.github.io/eastorchid/">
-  <meta name="twitter:card" content="summary_large_image">
-  
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Eastern Orchid",
-    "url": "https://eastorchid.github.io/eastorchid/",
-    "description": "Chinese Orchid Culture & Garden Life — Explore Chinese orchid culture, species, history, and gardening inspiration."
-  }
-  </script>
+  <title>Garden Life | Eastern Orchid</title>
+  <meta name="description" content="Explore a real Chinese orchid garden �?daily care, seasonal changes, growing notes, and the beauty of orchid life.">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .garden-hero { min-height:70vh; display:flex; align-items:center; justify-content:center; text-align:center; position:relative; overflow:hidden; background:linear-gradient(135deg,#1a3a1a,#2d5a2d); }
+    .garden-hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.45; }
+    .garden-hero .hero-overlay { position:relative; z-index:1; color:#fff; padding:2rem; }
+    .garden-hero h1 { color:#fff; font-size:clamp(2.5rem,6vw,3.5rem); margin-bottom:0.5rem; }
+    .garden-hero .hero-sub { font-weight:300; font-size:clamp(1rem,2vw,1.2rem); letter-spacing:0.15em; opacity:0.9; }
+
+    .about-text { max-width:700px; margin:0 auto 2rem; text-align:center; font-size:1.05rem; line-height:1.8; color:#6b6055; }
+
+    .collection-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.5rem; }
+    .species-card { background:#fff; border:1px solid #e8e5e0; border-radius:8px; overflow:hidden; text-decoration:none; color:#2a2518; transition:all 0.3s ease; display:flex; flex-direction:column; }
+    .species-card:hover { transform:translateY(-3px); box-shadow:0 8px 24px rgba(0,0,0,0.08); border-color:#2d5a2d; }
+    .species-card .card-photo { aspect-ratio:4/3; overflow:hidden; background:#e8e5e0; }
+    .species-card .card-photo img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s; }
+    .species-card:hover .card-photo img { transform:scale(1.05); }
+    .species-card .card-info { padding:1.25rem; flex:1; }
+    .species-card .card-info h3 { font-size:1.1rem; margin-bottom:0.15rem; }
+    .species-card .card-info .latin { font-size:0.8rem; font-style:italic; color:#6b6055; margin-bottom:0.4rem; }
+    .species-card .card-info p { font-size:0.85rem; color:#6b6055; line-height:1.5; }
+    .species-card:hover h3 { color:#2d5a2d; }
+
+    .season-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; }
+    .season-card { background:#fff; border:1px solid #e8e5e0; border-radius:8px; overflow:hidden; }
+    .season-card img { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
+    .season-card .season-info { padding:1.25rem; }
+    .season-card .season-info h3 { color:#1a3a1a; margin-bottom:0.2rem; }
+    .season-card .season-info .sub { font-size:0.85rem; color:#4a7c4a; font-weight:500; margin-bottom:0.4rem; }
+    .season-card .season-info p { font-size:0.85rem; color:#6b6055; line-height:1.5; }
+
+    .gallery-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0.75rem; }
+    .gallery-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:6px; border:1px solid #e8e5e0; transition:all 0.3s; cursor:pointer; }
+    .gallery-grid img:hover { transform:scale(1.02); box-shadow:0 4px 16px rgba(0,0,0,0.1); }
+
+    .video-card { background:#fff; border:1px solid #e8e5e0; border-radius:8px; overflow:hidden; transition:all 0.3s; }
+    .video-card:hover { transform:translateY(-3px); box-shadow:0 8px 24px rgba(0,0,0,0.06); }
+    .video-card .poster-wrap { position:relative; aspect-ratio:16/9; background:#1a3a1a; cursor:pointer; overflow:hidden; }
+    .video-card .poster-wrap img { width:100%; height:100%; object-fit:cover; display:block; }
+    .video-card .poster-wrap .play-icon { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.3); transition:all 0.3s; }
+    .video-card .poster-wrap .play-icon::after { content:'�?; font-size:3rem; color:#fff; opacity:0.9; text-shadow:0 2px 8px rgba(0,0,0,0.5); }
+    .video-card .poster-wrap:hover .play-icon { background:rgba(0,0,0,0.15); }
+    .video-card .poster-wrap:hover .play-icon::after { transform:scale(1.1); }
+    .video-card .card-body { padding:1.25rem 1.5rem; }
+    .video-card .card-body h3 { font-size:1.05rem; margin-bottom:0.2rem; }
+    .video-card .card-body p { font-size:0.85rem; color:#6b6055; line-height:1.5; }
+    .video-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:2rem; }
+    .care-link { text-align:center; margin-top:2.5rem; }
+
+    @media (max-width:600px) { .collection-grid { grid-template-columns:repeat(2,1fr); } .season-grid { grid-template-columns:1fr; } .gallery-grid { grid-template-columns:repeat(2,1fr); } }
+  </style>
 </head>
 <body>
-
-  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="nav-inner">
-      <a href="index.html" class="site-logo">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-          <circle cx="14" cy="14" r="13" stroke="#2d5a2d" stroke-width="1.5"/>
-          <path d="M14 4C10 9 8 14 8 18c0 2.5 1.5 5 6 6" stroke="#2d5a2d" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-          <path d="M14 4c4 5 6 10 6 14 0 2.5-1.5 5-6 6" stroke="#4a7c4a" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-        </svg>
-        <span>Eastern Orchid</span>
-      </a>
-      <button class="nav-toggle" aria-label="menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <a href="./index.html" class="site-logo">Eastern Orchid</a>
+      <button class="nav-toggle" aria-label="menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">�?/button>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="orchids/">Orchid World</a></li>
-        <li><a href="culture/">Orchid Culture</a></li>
-        <li><a href="garden/">Garden Life</a></li>
-        <li><a href="videos/">Videos</a></li>
-        <li><a href="about/">About</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./orchids/">Orchid World</a></li>
+        <li><a href="./culture/">Orchid Culture</a></li>
+        <li><a href="index.html" class="active">Garden Life</a></li>
+        <li><a href="./videos/">Videos</a></li>
+        <li><a href="./about/">About</a></li>
       </ul>
     </div>
   </header>
 
   <!-- ===== Hero ===== -->
-  <section class="hero" style="background:linear-gradient(rgba(26,58,26,0.5),rgba(26,58,26,0.4)),url(assets/images/hero/huilan_07.JPG) center/cover no-repeat;">
-    <div class="hero-content">
-      <p class="hero-label">Chinese Orchid Culture &amp; Garden Life</p>
-      <h1>Eastern Orchid</h1>
-      <div class="section-divider"></div>
-      <p class="hero-desc">A journey into the world of Chinese orchids — br>exploring their beauty, culture, and the art of garden living.</p>
-      <div class="hero-buttons">
-        <a href="orchids/" class="btn btn-primary">Discover Orchids</a>
-        <a href="garden/" class="btn btn-secondary">Visit the Garden</a>
-      </div>
+  <section class="garden-hero">
+    <img src="./assets/images/hero/huilan6-hero.webp" alt="Huilan 6 - Eastern Orchid Garden" loading="lazy">
+    <div class="hero-overlay">
+      <h1>Garden Life</h1>
+      <div class="section-divider" style="border-color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.3);"></div>
+      <p class="hero-sub">Growing Chinese Orchids with Patience and Tradition</p>
     </div>
   </section>
 
-  <!-- ===== Explore Section ===== -->
+  <!-- ===== About ===== -->
   <section class="section">
     <div class="container">
       <div class="section-title">
-        <h2>Explore Eastern Orchid</h2>
+        <h2>About Our Garden</h2>
         <div class="section-divider"></div>
-        <p>Discover the rich world of Chinese orchid culture, varieties, and garden life.</p>
       </div>
-      <div class="grid-3">
-        <a href="orchids/" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">🌿</div>
-          <div class="card-body">
-            <h3>Orchid World</h3>
-            <p>Discover Chinese orchid species, their origins, history, and the art of appreciation.</p>
-            <span class="card-link">Explore →</span>
-          </div>
-        </a>
-        <a href="culture/" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">🎋</div>
-          <div class="card-body">
-            <h3>Orchid Culture</h3>
-            <p>For thousands of years, orchids have symbolized elegance and harmony in Chinese tradition.</p>
-            <span class="card-link">Discover →</span>
-          </div>
-        </a>
-        <a href="garden/" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">🌱</div>
-          <div class="card-body">
-            <h3>Garden Life</h3>
-            <p>Follow a Chinese orchid lover's garden journey — care tips, bloom records, and seasonal stories.</p>
-            <span class="card-link">Visit →</span>
-          </div>
-        </a>
-      </div>
+      <p class="about-text">Our orchid garden is a living space where Chinese cymbidiums are grown, observed and appreciated through the seasons. Sheltered from harsh winds yet open to natural light and fresh air, it provides the ideal environment for traditional Chinese orchids to thrive �?from the first spring blooms to the quiet dormancy of winter.</p>
     </div>
   </section>
 
-  <!-- ===== Orchid World Deep ===== -->
+  <!-- ===== Collection ===== -->
   <section class="section section-alt">
     <div class="container">
       <div class="section-title">
-        <h2>Orchid World</h2>
+        <h2>Orchid Collection</h2>
         <div class="section-divider"></div>
-        <p>From the misty mountains of China to gardens around the world — br>explore the diversity of Chinese orchids.</p>
+        <p>Five traditional Chinese cymbidium species �?each with its own character, fragrance, and growing story.</p>
       </div>
-      <div class="grid-3">
-        <a href="orchids/#species" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">🌸</div>
-          <div class="card-body">
-            <h3>Orchid Species</h3>
-            <p>Cymbidium goeringii, Cymbidium ensifolium, Cymbidium sinense — meet the classic Chinese orchids.</p>
-            <span class="card-link">Learn more →</span>
-          </div>
+      <div class="collection-grid">
+        <a href="./articles/species/chunlan-cymbidium-goeringii.html" class="species-card">
+          <div class="card-photo"><img src="./assets/images/garden/collection/chunlan-cover.webp" alt="Chunlan" loading="lazy"></div>
+          <div class="card-info"><h3>Chunlan</h3><div class="latin">Cymbidium goeringii</div><p>Spring orchid �?the most beloved Chinese orchid, treasured for its delicate fragrance and elegant form.</p></div>
         </a>
-        <a href="orchids/#history" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">📜</div>
-          <div class="card-body">
-            <h3>Orchid History</h3>
-            <p>From ancient Chinese texts to modern cultivation — the journey of orchid appreciation through centuries.</p>
-            <span class="card-link">Read more →</span>
-          </div>
+        <a href="./articles/species/huilan-cymbidium-faberi.html" class="species-card">
+          <div class="card-photo"><img src="./assets/images/garden/collection/huilan-cover.webp" alt="Huilan" loading="lazy"></div>
+          <div class="card-info"><h3>Huilan</h3><div class="latin">Cymbidium faberi</div><p>Noble orchid with tall flower stalks and multiple blossoms �?a classic in Chinese gardens.</p></div>
         </a>
-        <a href="orchids/#gallery" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">📷</div>
-          <div class="card-body">
-            <h3>Orchid Gallery</h3>
-            <p>A visual collection of Chinese orchids in bloom — capturing nature's delicate artistry.</p>
-            <span class="card-link">View gallery →</span>
-          </div>
+        <a href="./articles/species/jianlan-cymbidium-ensifolium.html" class="species-card">
+          <div class="card-photo"><img src="./assets/images/garden/collection/jianlan-cover.webp" alt="Jianlan" loading="lazy"></div>
+          <div class="card-info"><h3>Jianlan</h3><div class="latin">Cymbidium ensifolium</div><p>Summer orchid �?blooms when the weather warms, filling the garden with its gentle fragrance.</p></div>
+        </a>
+        <a href="./articles/species/hanlan-cymbidium-kanran.html" class="species-card">
+          <div class="card-photo"><img src="./assets/images/garden/collection/hanlan-cover.webp" alt="Hanlan" loading="lazy"></div>
+          <div class="card-info"><h3>Hanlan</h3><div class="latin">Cymbidium kanran</div><p>Cold orchid �?blooms in winter, admired for its graceful flowers and refined scent.</p></div>
+        </a>
+        <a href="./articles/species/molan-cymbidium-sinense.html" class="species-card">
+          <div class="card-photo"><img src="./assets/images/garden/collection/molan-cover.webp" alt="Molan" loading="lazy"></div>
+          <div class="card-info"><h3>Molan</h3><div class="latin">Cymbidium sinense</div><p>Ink orchid �?named for its deep purple flowers, a favourite among serious orchid collectors.</p></div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ===== Orchid Culture Deep ===== -->
+  <!-- ===== Seasonal Garden ===== -->
   <section class="section">
     <div class="container">
       <div class="section-title">
-        <h2>Chinese Orchid Culture</h2>
+        <h2>Seasonal Garden</h2>
         <div class="section-divider"></div>
-        <p>More than a flower — the orchid is a symbol of integrity, elegance, and refinement in Chinese culture.</p>
+        <p>Each season brings a different rhythm to the orchid garden �?from spring blooms to winter rest.</p>
       </div>
-      <div class="grid-3">
-        <a href="culture/" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">🏮</div>
-          <div class="card-body">
-            <h3>Orchid &amp; Tradition</h3>
-            <p>Orchids in Chinese literature, art, and philosophy — from Confucius to contemporary culture.</p>
-            <span class="card-link">Explore →</span>
+      <div class="season-grid">
+        <div class="season-card">
+          <img src="./assets/images/garden/gallery/season-spring.webp" alt="Spring orchids" loading="lazy">
+          <div class="season-info">
+            <h3>Spring</h3>
+            <div class="sub">Chunlan blooming season</div>
+            <p>Spring is the season of awakening. Chunlan flowers open with a delicate fragrance, and new growth emerges from the compost. This is the most anticipated time in the orchid garden.</p>
           </div>
-        </a>
-        <a href="culture/#spirit" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">🎍</div>
-          <div class="card-body">
-            <h3>The Orchid Spirit</h3>
-            <p>"The orchid grows in the deep forest, yet still blooms without an audience" — the virtue of humility.</p>
-            <span class="card-link">Discover →</span>
+        </div>
+        <div class="season-card">
+          <img src="./assets/images/garden/gallery/season-summer.webp" alt="Summer orchids" loading="lazy">
+          <div class="season-info">
+            <h3>Summer</h3>
+            <div class="sub">Jianlan growth and care</div>
+            <p>Warm weather brings strong growth. Jianlan sends up flower spikes, and the garden is at its most lush. Daily watering and careful attention to light levels keep the orchids thriving.</p>
           </div>
-        </a>
-        <a href="culture/#art" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">🖌—</div>
-          <div class="card-body">
-            <h3>Orchids in Art</h3>
-            <p>Orchids in Chinese painting, poetry, and calligraphy — an enduring muse for centuries.</p>
-            <span class="card-link">View →</span>
+        </div>
+        <div class="season-card">
+          <img src="./assets/images/garden/gallery/season-autumn.webp" alt="Autumn garden" loading="lazy">
+          <div class="season-info">
+            <h3>Autumn</h3>
+            <div class="sub">Orchid maintenance</div>
+            <p>A time for repotting, dividing established clumps, and preparing the garden for cooler months. Autumn is when the gardener's patience is rewarded with strong root systems.</p>
           </div>
-        </a>
+        </div>
+        <div class="season-card">
+          <img src="./assets/images/garden/gallery/season-winter.webp" alt="Winter orchids" loading="lazy">
+          <div class="season-info">
+            <h3>Winter</h3>
+            <div class="sub">Protecting orchids in cold days</div>
+            <p>Winter is quiet but not empty. Hanlan orchids bloom in the cold, and the garden rests. Protection from frost and careful watering keep the collection healthy until spring.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Garden Life ===== -->
+  <!-- ===== Gallery ===== -->
   <section class="section section-alt">
     <div class="container">
       <div class="section-title">
-        <h2>Garden Life</h2>
+        <h2>Garden Gallery</h2>
         <div class="section-divider"></div>
-        <p>A Chinese orchid lover's personal garden — daily care, seasonal changes, and the joy of watching orchids bloom.</p>
+        <p>Moments captured in the orchid garden �?the changing light, the flowers, the daily rituals of care.</p>
       </div>
-      <div class="grid-3">
-        <a href="garden/" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">📝</div>
-          <div class="card-body">
-            <h3>Garden Diary</h3>
-            <p>Daily notes on orchid care — repotting, watering, seasonal management, and garden observations.</p>
-            <span class="card-link">Read →</span>
-          </div>
-        </a>
-        <a href="garden/#collection" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">🌱</div>
-          <div class="card-body">
-            <h3>Orchid Collection</h3>
-            <p>Every orchid in the garden has a story. Meet the collection and learn about each variety.</p>
-            <span class="card-link">Explore →</span>
-          </div>
-        </a>
-        <a href="garden/#blooms" class="feature-card">
-          <div class="card-image" style="background:#e8e5e0;">🌸</div>
-          <div class="card-body">
-            <h3>Bloom Records</h3>
-            <p>Capturing the magic of each bloom — photographs and notes on flowering seasons.</p>
-            <span class="card-link">View →</span>
-          </div>
-        </a>
+      <div class="gallery-grid">
+        <img src="./assets/images/garden/gallery/garden-01.webp" alt="Orchid garden view" loading="lazy">
+        <img src="./assets/images/garden/gallery/garden-02.webp" alt="Huilan orchid" loading="lazy">
+        <img src="./assets/images/garden/gallery/garden-03.webp" alt="Jianlan orchid" loading="lazy">
+        <img src="./assets/images/garden/gallery/garden-04.webp" alt="Huilan close-up" loading="lazy">
+        <img src="./assets/images/garden/gallery/garden-05.webp" alt="Chunlan bloom" loading="lazy">
+        <img src="./assets/images/garden/gallery/garden-06.webp" alt="Jianlan detail" loading="lazy">
       </div>
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
+  <!-- ===== Videos ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Orchid Care Videos</h2>
+        <div class="section-divider"></div>
+        <p>Watch how we care for Chinese orchids �?from daily watering to seasonal maintenance.</p>
+      </div>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'./assets/video-library/watering/web/watering-01.mp4\' type=\'video/mp4\'></video>'">
+            <img src="./assets/images/garden/video-cover/watering01.webp" alt="How We Water Chinese Orchids" loading="lazy">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>How We Water Chinese Orchids</h3>
+            <p>Spring watering routine �?gentle and thorough, matching the awakening growth cycle.</p>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'./assets/video-library/watering/web/watering-03.mp4\' type=\'video/mp4\'></video>'">
+            <img src="./assets/images/garden/video-cover/watering03.webp" alt="Daily Orchid Garden Maintenance" loading="lazy">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Daily Orchid Garden Maintenance</h3>
+            <p>A complete care session �?inspecting leaves, checking moisture, and tending each orchid.</p>
+          </div>
+        </div>
+      </div>
+      <div class="care-link">
+        <a href="./articles/growing/how-to-water-orchids-correctly.html" class="btn btn-primary">Read: How to Water Orchids Correctly �?/a>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
         <h3>Eastern Orchid</h3>
         <p>Chinese Orchid Culture &amp; Garden Life</p>
-        <p style="margin-top:1rem;font-size:0.9rem;opacity:0.8;">
-          A Chinese orchid lover's garden,<br>
-          sharing orchid culture, nature and gardening life with the world.
-        </p>
       </div>
       <div class="footer-links">
         <h4>Explore</h4>
         <ul>
-          <li><a href="orchids/">Orchid World</a></li>
-          <li><a href="culture/">Orchid Culture</a></li>
-          <li><a href="garden/">Garden Life</a></li>
-          <li><a href="videos/">Videos</a></li>
+          <li><a href="./orchids/">Orchid World</a></li>
+          <li><a href="./culture/">Orchid Culture</a></li>
+          <li><a href="./garden/">Garden Life</a></li>
+          <li><a href="./videos/">Videos</a></li>
         </ul>
       </div>
       <div class="footer-links">
         <h4>Info</h4>
         <ul>
-          <li><a href="about/">About</a></li>
-                  </ul>
+          <li><a href="./about/">About</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">
@@ -245,7 +254,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
-

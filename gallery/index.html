@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orchid Gallery | Eastern Orchid</title>
+  <meta name="description" content="Explore the beauty of Chinese orchids through photographs and videos — from garden scenes to close-up blooms.">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .gallery-category {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all var(--transition);
+      text-decoration: none;
+      color: var(--text);
+      display: block;
+    }
+    .gallery-category:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      border-color: var(--green-mid);
+    }
+    .gallery-category .preview {
+      aspect-ratio: 16/10;
+      background: var(--gray-200);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--text-light);
+    }
+    .gallery-category .info {
+      padding: 1.5rem;
+    }
+    .gallery-category .info h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.3rem;
+    }
+    .gallery-category .info p {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+    .gallery-category .info .count {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: var(--green-mid);
+      font-weight: 500;
+    }
+    .coming-soon {
+      text-align: center;
+      padding: 4rem 1.5rem;
+      background: var(--gray-100);
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    .coming-soon p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="../index.html" class="site-logo">Eastern Orchid</a>
+      <button class="nav-toggle" aria-label="menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../orchids/">Orchid World</a></li>
+        <li><a href="../culture/">Orchid Culture</a></li>
+        <li><a href="../garden/">Garden Life</a></li>
+        <li><a href="../videos/">Videos</a></li>
+        <li><a href="../about/">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <h1>Orchid Gallery</h1>
+    <div class="section-divider"></div>
+    <p>A visual journey through the world of Chinese orchids — from cultivated blooms to the garden they call home.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-grid">
+        <a href="#chinese-orchids" class="gallery-category">
+          <div class="preview">🌸</div>
+          <div class="info">
+            <h3>Chinese Orchids</h3>
+            <p>Close-up portraits of Chunlan, Huilan, Jianlan, Hanlan and Molan — the five traditional Chinese cymbidiums.</p>
+            <span class="count">View collection →</span>
+          </div>
+        </a>
+
+        <a href="#garden-scenes" class="gallery-category">
+          <div class="preview">🌿</div>
+          <div class="info">
+            <h3>Garden Scenes</h3>
+            <p>The orchid garden through the seasons — growing benches, natural light, and the quiet atmosphere of daily cultivation.</p>
+            <span class="count">View collection →</span>
+          </div>
+        </a>
+
+        <a href="#bloom-diary" class="gallery-category">
+          <div class="preview">💮</div>
+          <div class="info">
+            <h3>Bloom Diary</h3>
+            <p>Recording each new flower as it opens — the colour, the form, and the quiet excitement of a bud becoming a bloom.</p>
+            <span class="count">View collection →</span>
+          </div>
+        </a>
+
+        <a href="#orchid-videos" class="gallery-category">
+          <div class="preview">🎬</div>
+          <div class="info">
+            <h3>Orchid Videos</h3>
+            <p>Short videos capturing orchid life — garden tours, watering routines, and the seasonal rhythm of the growing space.</p>
+            <span class="count">View collection →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section placeholders for future content -->
+  <section class="section section-alt" id="chinese-orchids">
+    <div class="container">
+      <div class="section-title">
+        <h2>Chinese Orchids</h2>
+        <div class="section-divider"></div>
+        <p>Close-up portraits of traditional Chinese cymbidium species.</p>
+      </div>
+      <div class="coming-soon">
+        <p>📸 Images being prepared. Check back soon for the full collection.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="garden-scenes">
+    <div class="container">
+      <div class="section-title">
+        <h2>Garden Scenes</h2>
+        <div class="section-divider"></div>
+        <p>The orchid garden through the seasons.</p>
+      </div>
+      <div class="coming-soon">
+        <p>🌿 Garden photos coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="bloom-diary">
+    <div class="container">
+      <div class="section-title">
+        <h2>Bloom Diary</h2>
+        <div class="section-divider"></div>
+        <p>Recording each new flower as it opens.</p>
+      </div>
+      <div class="coming-soon">
+        <p>🌸 Bloom records being compiled.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="orchid-videos">
+    <div class="container">
+      <div class="section-title">
+        <h2>Orchid Videos</h2>
+        <div class="section-divider"></div>
+        <p>Short videos from the orchid garden.</p>
+      </div>
+      <div class="coming-soon">
+        <p>🎬 Visit the <a href="../garden/">Garden Life</a> page to see garden and watering videos.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Eastern Orchid</h3>
+        <p>Chinese Orchid Culture &amp; Garden Life</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../orchids/">Orchid World</a></li>
+          <li><a href="../culture/">Orchid Culture</a></li>
+          <li><a href="../garden/">Garden Life</a></li>
+          <li><a href="../videos/">Videos</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="../about/">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Eastern Orchid. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
