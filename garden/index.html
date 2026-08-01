@@ -42,10 +42,10 @@
 
     .video-card { background:#fff; border:1px solid #e8e5e0; border-radius:8px; overflow:hidden; transition:all 0.3s; }
     .video-card:hover { transform:translateY(-3px); box-shadow:0 8px 24px rgba(0,0,0,0.06); }
-    .video-card .poster-wrap { position:relative; aspect-ratio:16/9; background:#1a3a1a; cursor:pointer; overflow:hidden; }
+    .video-card .poster-wrap { position:relative; aspect-ratio:16/9; cursor:pointer; overflow:hidden; background:linear-gradient(135deg,#1a3a1a,#2d5a2d); }
     .video-card .poster-wrap img { width:100%; height:100%; object-fit:cover; display:block; }
-    .video-card .poster-wrap .play-icon { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.3); transition:all 0.3s; }
-    .video-card .poster-wrap .play-icon::after { content:'▶'; font-size:3rem; color:#fff; opacity:0.9; text-shadow:0 2px 8px rgba(0,0,0,0.5); }
+    .video-card .poster-wrap .play-icon { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.25); transition:all 0.3s; }
+    .video-card .poster-wrap .play-icon::after { content:'\25B6'; font-size:3rem; color:#fff; opacity:0.9; text-shadow:0 2px 8px rgba(0,0,0,0.5); }
     .video-card .poster-wrap:hover .play-icon { background:rgba(0,0,0,0.15); }
     .video-card .poster-wrap:hover .play-icon::after { transform:scale(1.1); }
     .video-card .card-body { padding:1.25rem 1.5rem; }
@@ -61,7 +61,7 @@
   <header class="site-header">
     <div class="nav-inner">
       <a href="../index.html" class="site-logo">Eastern Orchid</a>
-      <button class="nav-toggle" aria-label="menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <button class="nav-toggle" aria-label="menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="../orchids/">Orchid World</a></li>
@@ -93,6 +93,13 @@
       <p class="about-text">Our orchid garden is a living space where Chinese cymbidiums are grown, observed and appreciated through the seasons. Sheltered from harsh winds yet open to natural light and fresh air, it provides the ideal environment for traditional Chinese orchids to thrive — from the first spring blooms to the quiet dormancy of winter.</p>
     </div>
   </section>
+
+  <!-- ===== Video Hub Banner ===== -->
+  <div style="text-align:center;padding:0.8rem;background:var(--green-dark);">
+    <a href="../videos/" style="color:#fff;font-size:1.1rem;font-weight:500;letter-spacing:0.05em;">
+      &#9654; Watch 22 Huilan Videos &rarr;
+    </a>
+  </div>
 
   <!-- ===== Collection ===== -->
   <section class="section section-alt">
@@ -187,6 +194,15 @@
         <img src="../assets/images/garden/gallery/garden-04.webp" alt="Huilan close-up" loading="lazy">
         <img src="../assets/images/garden/gallery/garden-05.webp" alt="Chunlan bloom" loading="lazy">
         <img src="../assets/images/garden/gallery/garden-06.webp" alt="Jianlan detail" loading="lazy">
+        <img src="../assets/images/chunlan/chunlan_04.JPG" alt="Chunlan orchid close-up" loading="lazy">
+        <img src="../assets/images/chunlan/chunlan_09.JPG" alt="Chunlan flower" loading="lazy">
+        <img src="../assets/images/chunlan/chunlan_12.JPG" alt="Chunlan blossom" loading="lazy">
+        <img src="../assets/images/huilan/huilan_02.JPG" alt="Huilan orchid" loading="lazy">
+        <img src="../assets/images/huilan/huilan_06.JPG" alt="Huilan flower" loading="lazy">
+        <img src="../assets/images/jianlan/jianlan_01.JPG" alt="Jianlan orchid" loading="lazy">
+        <img src="../assets/images/jianlan/jianlan_05.JPG" alt="Jianlan bloom" loading="lazy">
+        <img src="../assets/images/hanlan/hanlan_flower.jpg" alt="Hanlan flower" loading="lazy">
+        <img src="../assets/images/molan/molan_flower.jpg" alt="Molan flower" loading="lazy">
       </div>
     </div>
   </section>
@@ -202,7 +218,6 @@
       <div class="video-grid">
         <div class="video-card">
           <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/video-library/watering/web/watering-01.mp4\' type=\'video/mp4\'></video>'">
-            <img src="../assets/images/garden/video-cover/watering01.webp" alt="How We Water Chinese Orchids" loading="lazy">
             <div class="play-icon"></div>
           </div>
           <div class="card-body">
@@ -212,7 +227,6 @@
         </div>
         <div class="video-card">
           <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/video-library/watering/web/watering-03.mp4\' type=\'video/mp4\'></video>'">
-            <img src="../assets/images/garden/video-cover/watering03.webp" alt="Daily Orchid Garden Maintenance" loading="lazy">
             <div class="play-icon"></div>
           </div>
           <div class="card-body">
@@ -220,9 +234,61 @@
             <p>A complete care session — inspecting leaves, checking moisture, and tending each orchid.</p>
           </div>
         </div>
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/video-library/watering/web/watering-02.mp4\' type=\'video/mp4\'></video>'">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Watering Orchids &mdash; Daily Practice</h3>
+            <p>The everyday practice of checking moisture — and giving each orchid the water it needs.</p>
+          </div>
+        </div>
       </div>
       <div class="care-link">
-        <a href="../articles/growing/how-to-water-orchids-correctly.html" class="btn btn-primary">Read: How to Water Orchids Correctly →</a>
+        <a href="../articles/growing/how-to-water-orchids-correctly.html" class="btn btn-primary">Read: How to Water Orchids Correctly &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Huilan Videos ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Huilan Videos</h2>
+        <div class="section-divider"></div>
+        <p>Watch 22 Huilan (Cymbidium faberi) videos from the orchid garden — growth, blooming, and daily care.</p>
+      </div>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/videos/huilan/huilan-1.mp4\' type=\'video/mp4\'></video>'">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Huilan 1</h3>
+            <p>Spring growth and early development in the orchid garden.</p>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/videos/huilan/huilan-5.mp4\' type=\'video/mp4\'></video>'">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Huilan 5</h3>
+            <p>Leaf detail and plant structure in natural light.</p>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/videos/huilan/huilan-10.mp4\' type=\'video/mp4\'></video>'">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Huilan 10</h3>
+            <p>Afternoon atmosphere and daily rhythm in the growing space.</p>
+          </div>
+        </div>
+      </div>
+      <div class="care-link">
+        <a href="../videos/" class="btn btn-primary">Watch All 22 Huilan Videos &rarr;</a>
       </div>
     </div>
   </section>
@@ -233,18 +299,20 @@
         <h3>Eastern Orchid</h3>
         <p>Chinese Orchid Culture &amp; Garden Life</p>
       </div>
-      <div class="footer-links">
+            <div class="footer-links">
         <h4>Explore</h4>
         <ul>
           <li><a href="../orchids/">Orchid World</a></li>
           <li><a href="../culture/">Orchid Culture</a></li>
           <li><a href="../garden/">Garden Life</a></li>
           <li><a href="../videos/">Videos</a></li>
+          <li><a href="../gallery/">Gallery</a></li>
         </ul>
       </div>
       <div class="footer-links">
         <h4>Info</h4>
         <ul>
+          <li><a href="../articles/">Knowledge Library</a></li>
           <li><a href="../about/">About</a></li>
         </ul>
       </div>

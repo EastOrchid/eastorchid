@@ -7,6 +7,7 @@
   <url><loc>https://eastorchid.github.io/eastorchid/culture/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://eastorchid.github.io/eastorchid/garden/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://eastorchid.github.io/eastorchid/videos/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/gallery/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://eastorchid.github.io/eastorchid/about/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 
   <!-- Articles Index -->
@@ -35,7 +36,7 @@
     <!-- World Orchids -->
   <url><loc>https://eastorchid.github.io/eastorchid/articles/species/phalaenopsis-orchids-care-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eastorchid.github.io/eastorchid/articles/species/dendrobium-orchids-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/cattleya-orchids-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://eastorchid.github.io/eastorchid/articles/species/cattleya-orchids-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <url><loc>https://eastorchid.github.io/eastorchid/articles/species/paphiopedilum-orchids-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://eastorchid.github.io/eastorchid/articles/species/vanda-orchids-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
