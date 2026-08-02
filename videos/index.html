@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huilan Videos | Eastern Orchid</title>
-  <meta name="description" content="Watch 22 Huilan (Cymbidium faberi) orchid videos — garden tours, blooming moments, and daily care footage from a real Chinese orchid garden.">
+  <title>Videos | Eastern Orchid — Garden Tours, Orchid Care &amp; Huilan</title>
+  <meta name="description" content="Watch videos from the Eastern Orchid garden — garden tours, daily orchid care and watering, and 22 clips of Huilan (Cymbidium faberi) growth through the seasons.">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../css/style.css">
   <style>
@@ -13,13 +13,14 @@
     .video-card .poster-wrap { position:relative; aspect-ratio:16/9; background:#1a3a1a; cursor:pointer; overflow:hidden; }
     .video-card .poster-wrap img { width:100%; height:100%; object-fit:cover; display:block; }
     .video-card .poster-wrap .play-icon { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.3); transition:all 0.3s; }
-    .video-card .poster-wrap .play-icon::after { content:'▶'; font-size:2.5rem; color:#fff; opacity:0.9; text-shadow:0 2px 8px rgba(0,0,0,0.5); }
+    .video-card .poster-wrap .play-icon::after { content:'\25B6'; font-size:2.5rem; color:#fff; opacity:0.9; text-shadow:0 2px 8px rgba(0,0,0,0.5); }
     .video-card .poster-wrap:hover .play-icon { background:rgba(0,0,0,0.15); }
     .video-card .poster-wrap:hover .play-icon::after { transform:scale(1.1); }
     .video-card .card-body { padding:1rem 1.25rem; }
     .video-card .card-body h3 { font-size:1rem; margin-bottom:0.15rem; }
     .video-card .card-body p { font-size:0.8rem; color:#6b6055; line-height:1.4; }
     .video-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem; }
+    .cat-badge { display:inline-block; margin-top:0.4rem; font-size:0.72rem; font-weight:500; color:#2d5a2d; background:#eef4ee; border:1px solid #dce8dc; border-radius:3px; padding:0.15rem 0.5rem; }
   </style>
 </head>
 <body>
@@ -39,15 +40,124 @@
   </header>
 
   <section class="page-header">
-    <h1>Huilan Videos</h1>
+    <h1>Orchid Videos</h1>
     <div class="section-divider"></div>
-    <p>A complete collection of Huilan (Cymbidium faberi) videos from the Eastern Orchid garden — 22 clips capturing growth, care, garden life and seasonal changes.</p>
+    <p>Real footage from the Eastern Orchid garden — garden tours, daily care and watering, and a complete seasonal record of our Huilan collection.</p>
   </section>
 
+  <!-- ===== Garden Tour ===== -->
   <section class="section">
     <div class="container">
+      <div class="section-title">
+        <h2>Garden Tour</h2>
+        <div class="section-divider"></div>
+        <p>Walk through the orchid garden — the growing space, the collection, and the atmosphere of a working orchid garden.</p>
+      </div>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/video-library/garden/web/garden-01.mp4\' type=\'video/mp4\'></video>'">
+            <img src="../assets/images/garden/gallery/garden-01.webp" alt="Garden tour 1" loading="lazy">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Garden Tour 01</h3>
+            <p>A first walk through the orchid garden.</p>
+            <span class="cat-badge">Garden Tour</span>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/video-library/garden/web/garden-02.mp4\' type=\'video/mp4\'></video>'">
+            <img src="../assets/images/garden/gallery/garden-02.webp" alt="Garden tour 2" loading="lazy">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Garden Tour 02</h3>
+            <p>Moving through the growing space in natural light.</p>
+            <span class="cat-badge">Garden Tour</span>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/video-library/garden/web/garden-03.mp4\' type=\'video/mp4\'></video>'">
+            <img src="../assets/images/garden/gallery/garden-03.webp" alt="Garden tour 3" loading="lazy">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Garden Tour 03</h3>
+            <p>The full collection — every plant in its place.</p>
+            <span class="cat-badge">Garden Tour</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Orchid Care ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Orchid Care</h2>
+        <div class="section-divider"></div>
+        <p>How the garden is cared for day to day — watering, checking, and tending each plant.</p>
+      </div>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/video-library/watering/web/watering-01.mp4\' type=\'video/mp4\'></video>'">
+            <img src="../assets/images/garden/video-cover/watering01.webp" alt="How we water Chinese orchids" loading="lazy">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>How We Water</h3>
+            <p>Watering Chinese orchids the traditional way.</p>
+            <span class="cat-badge">Orchid Care</span>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/video-library/watering/web/watering-02.mp4\' type=\'video/mp4\'></video>'">
+            <img src="../assets/images/garden/video-cover/watering02.webp" alt="Watering orchids daily practice" loading="lazy">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Daily Watering</h3>
+            <p>The daily rhythm of the orchid garden.</p>
+            <span class="cat-badge">Orchid Care</span>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/video-library/watering/web/watering-03.mp4\' type=\'video/mp4\'></video>'">
+            <img src="../assets/images/garden/video-cover/watering03.webp" alt="Daily orchid garden maintenance" loading="lazy">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Garden Maintenance</h3>
+            <p>Tending the garden through the seasons.</p>
+            <span class="cat-badge">Orchid Care</span>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="poster-wrap" onclick="this.innerHTML='<video controls autoplay width=\'100%\'><source src=\'../assets/video-library/watering/web/watering-04.mp4\' type=\'video/mp4\'></video>'">
+            <img src="../assets/images/garden/video-cover/watering04.webp" alt="Orchid care routine" loading="lazy">
+            <div class="play-icon"></div>
+          </div>
+          <div class="card-body">
+            <h3>Care Routine</h3>
+            <p>Attention to each plant's health and moisture.</p>
+            <span class="cat-badge">Orchid Care</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Huilan Collection ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Huilan Collection</h2>
+        <div class="section-divider"></div>
+        <p>Twenty-two clips following our Huilan (Cymbidium faberi) through the growing season — from new shoots to full bloom.</p>
+      </div>
       <div class="video-grid" id="huilan-grid">
-        <!-- 22 video cards will be generated -->
+        <!-- 22 Huilan video cards generated below -->
       </div>
     </div>
   </section>
@@ -121,6 +231,7 @@
         <div class="card-body">
           <h3>Huilan ${i}</h3>
           <p>${descriptions[i-1]}</p>
+          <span class="cat-badge">Huilan</span>
         </div>
       `;
       grid.appendChild(card);
