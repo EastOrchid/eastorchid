@@ -15,7 +15,14 @@ const includeExt = ['.html', '.css', '.js', '.jpg', '.jpeg', '.png', '.gif', '.w
 function syncDir(dir, relative) {
   const items = fs.readdirSync(dir, { withFileTypes: true });
   
+  // 跳过不需要同步的目录
+  const skipDirs = ['.git', 'scripts', 'node_modules', 'tmp-chrome', 'tmp-chrome2', 'tmp-chrome3', 'tmp-chrome4', 'tmp-live'];
+  const skipFiles = ['sync-preview.js', 'PHOTO_REVIEW_LIST.md', 'text_files.txt', 'video_files.txt'];
+  
   for (const item of items) {
+    if (item.isDirectory() && skipDirs.includes(item.name)) continue;
+    if (item.isFile() && skipFiles.includes(item.name)) continue;
+    
     const srcPath = path.join(dir, item.name);
     const relPath = relative ? path.join(relative, item.name) : item.name;
     const dstPath = path.join(dst, relPath);
