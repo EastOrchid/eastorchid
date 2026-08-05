@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📸 Eastern Orchid — 照片缩略图索引</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Noto Sans SC', sans-serif; background: #f5f0e8; padding: 20px; color: #2d3a1e; }
+  h1 { font-size: 24px; margin-bottom: 8px; }
+  .subtitle { color: #666; margin-bottom: 24px; font-size: 14px; }
+  h2 { font-size: 18px; margin: 32px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #5a7a3a; color: #3d5a1e; }
+  .count-badge { display: inline-block; background: #5a7a3a; color: white; padding: 2px 10px; border-radius: 12px; font-size: 13px; margin-left: 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.15s; }
+  .card:hover { transform: scale(1.05); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+  .card img { width: 100%; height: 150px; object-fit: cover; display: block; background: #e8e0d0; }
+  .card .info { padding: 6px 8px 8px; }
+  .card .name { font-size: 11px; color: #333; word-break: break-all; line-height: 1.3; }
+  .card .meta { font-size: 10px; color: #888; margin-top: 2px; }
+  .status-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #2d3a1e; color: #ccc; padding: 8px 20px; font-size: 13px; text-align: center; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; font-size: 13px; }
+  .legend-item { display: flex; align-items: center; gap: 4px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .dot-春兰 { background: #e8a0c0; }
+  .dot-蕙兰 { background: #f0c060; }
+  .dot-建兰 { background: #80c080; }
+  .dot-iPhone { background: #60a0d0; }
+  .dot-unknown { background: #a08060; }
+</style>
+</head>
+<body>
+<h1>🌿 Eastern Orchid — 照片总索引</h1>
+<p class="subtitle">共 52 张照片 · 点击图片查看原图 · 帮助识别品种</p>
+
+<div class="legend">
+  <span class="legend-item"><span class="dot dot-春兰"></span> 春兰</span>
+  <span class="legend-item"><span class="dot dot-蕙兰"></span> 蕙兰</span>
+  <span class="legend-item"><span class="dot dot-建兰"></span> 建兰</span>
+  <span class="legend-item"><span class="dot dot-iPhone"></span> iPhone环境照</span>
+  <span class="legend-item"><span class="dot dot-unknown"></span> 待识别</span>
+</div>
+<h2><span class="dot dot-春兰"></span> 春兰 <span class="count-badge">14</span></h2>
+<div class="grid">
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰1.JPG','_blank')">
+    <img src="thumbs/春兰1.jpg" alt="春兰1.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰1.JPG</div>
+      <div class="meta">800×533 · 136KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰10.JPG','_blank')">
+    <img src="thumbs/春兰10.jpg" alt="春兰10.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰10.JPG</div>
+      <div class="meta">863×1151 · 148KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰11.JPG','_blank')">
+    <img src="thumbs/春兰11.jpg" alt="春兰11.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰11.JPG</div>
+      <div class="meta">1000×629 · 313KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰12.JPG','_blank')">
+    <img src="thumbs/春兰12.jpg" alt="春兰12.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰12.JPG</div>
+      <div class="meta">800×533 · 229KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰13.JPG','_blank')">
+    <img src="thumbs/春兰13.jpg" alt="春兰13.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰13.JPG</div>
+      <div class="meta">863×1151 · 148KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰14.JPG','_blank')">
+    <img src="thumbs/春兰14.jpg" alt="春兰14.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰14.JPG</div>
+      <div class="meta">1080×1620 · 568KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰2.JPG','_blank')">
+    <img src="thumbs/春兰2.jpg" alt="春兰2.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰2.JPG</div>
+      <div class="meta">800×533 · 209KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰3.JPG','_blank')">
+    <img src="thumbs/春兰3.jpg" alt="春兰3.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰3.JPG</div>
+      <div class="meta">533×800 · 236KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰4.JPG','_blank')">
+    <img src="thumbs/春兰4.jpg" alt="春兰4.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰4.JPG</div>
+      <div class="meta">800×600 · 83KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰5.JPG','_blank')">
+    <img src="thumbs/春兰5.jpg" alt="春兰5.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰5.JPG</div>
+      <div class="meta">800×538 · 268KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰6.JPG','_blank')">
+    <img src="thumbs/春兰6.jpg" alt="春兰6.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰6.JPG</div>
+      <div class="meta">1000×666 · 360KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰7.JPG','_blank')">
+    <img src="thumbs/春兰7.jpg" alt="春兰7.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰7.JPG</div>
+      <div class="meta">1000×666 · 99KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰8.JPG','_blank')">
+    <img src="thumbs/春兰8.jpg" alt="春兰8.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰8.JPG</div>
+      <div class="meta">1000×666 · 401KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/春兰9.JPG','_blank')">
+    <img src="thumbs/春兰9.jpg" alt="春兰9.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">春兰9.JPG</div>
+      <div class="meta">800×533 · 222KB</div>
+    </div>
+  </div>
+</div>
+<h2><span class="dot dot-蕙兰"></span> 蕙兰 <span class="count-badge">9</span></h2>
+<div class="grid">
+  <div class="card" onclick="window.open('file:///G\兰花\/惠兰1.JPG','_blank')">
+    <img src="thumbs/惠兰1.jpg" alt="惠兰1.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">惠兰1.JPG</div>
+      <div class="meta">706×1024 · 54KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/惠兰2.JPG','_blank')">
+    <img src="thumbs/惠兰2.jpg" alt="惠兰2.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">惠兰2.JPG</div>
+      <div class="meta">4032×3024 · 2505KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/惠兰3.JPG','_blank')">
+    <img src="thumbs/惠兰3.jpg" alt="惠兰3.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">惠兰3.JPG</div>
+      <div class="meta">4032×3024 · 2956KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/惠兰4.JPG','_blank')">
+    <img src="thumbs/惠兰4.jpg" alt="惠兰4.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">惠兰4.JPG</div>
+      <div class="meta">4032×3024 · 2803KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/惠兰5.JPG','_blank')">
+    <img src="thumbs/惠兰5.jpg" alt="惠兰5.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">惠兰5.JPG</div>
+      <div class="meta">4032×3024 · 2110KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/惠兰6.JPG','_blank')">
+    <img src="thumbs/惠兰6.jpg" alt="惠兰6.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">惠兰6.JPG</div>
+      <div class="meta">4032×3024 · 3120KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/惠兰7.JPG','_blank')">
+    <img src="thumbs/惠兰7.jpg" alt="惠兰7.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">惠兰7.JPG</div>
+      <div class="meta">4032×3024 · 3550KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/惠兰8.JPG','_blank')">
+    <img src="thumbs/惠兰8.jpg" alt="惠兰8.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">惠兰8.JPG</div>
+      <div class="meta">4032×3024 · 4045KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/惠兰9.JPG','_blank')">
+    <img src="thumbs/惠兰9.jpg" alt="惠兰9.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">惠兰9.JPG</div>
+      <div class="meta">1080×2412 · 745KB</div>
+    </div>
+  </div>
+</div>
+<h2><span class="dot dot-建兰"></span> 建兰 <span class="count-badge">7</span></h2>
+<div class="grid">
+  <div class="card" onclick="window.open('file:///G\兰花\/建兰1.JPG','_blank')">
+    <img src="thumbs/建兰1.jpg" alt="建兰1.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">建兰1.JPG</div>
+      <div class="meta">843×617 · 121KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/建兰13.JPG','_blank')">
+    <img src="thumbs/建兰13.jpg" alt="建兰13.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">建兰13.JPG</div>
+      <div class="meta">1080×1921 · 803KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/建兰2.JPG','_blank')">
+    <img src="thumbs/建兰2.jpg" alt="建兰2.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">建兰2.JPG</div>
+      <div class="meta">886×1386 · 140KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/建兰3.JPG','_blank')">
+    <img src="thumbs/建兰3.jpg" alt="建兰3.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">建兰3.JPG</div>
+      <div class="meta">1279×1706 · 291KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/建兰7.JPG','_blank')">
+    <img src="thumbs/建兰7.jpg" alt="建兰7.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">建兰7.JPG</div>
+      <div class="meta">1074×1074 · 161KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/建兰8.JPG','_blank')">
+    <img src="thumbs/建兰8.jpg" alt="建兰8.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">建兰8.JPG</div>
+      <div class="meta">825×1537 · 244KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/建兰9.JPG','_blank')">
+    <img src="thumbs/建兰9.jpg" alt="建兰9.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">建兰9.JPG</div>
+      <div class="meta">848×643 · 95KB</div>
+    </div>
+  </div>
+</div>
+<h2><span class="dot dot-iPhone"></span> iPhone环境照 <span class="count-badge">2</span></h2>
+<div class="grid">
+  <div class="card" onclick="window.open('file:///G\兰花\/IMG_2388.JPG','_blank')">
+    <img src="thumbs/IMG_2388.jpg" alt="IMG_2388.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">IMG_2388.JPG</div>
+      <div class="meta">4032×3024 · 2804KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/IMG_2390.JPG','_blank')">
+    <img src="thumbs/IMG_2390.jpg" alt="IMG_2390.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">IMG_2390.JPG</div>
+      <div class="meta">4032×3024 · 2665KB</div>
+    </div>
+  </div>
+</div>
+<h2><span class="dot dot-unknown"></span> unknown <span class="count-badge">20</span></h2>
+<div class="grid">
+  <div class="card" onclick="window.open('file:///G\兰花\/CFZP9515.JPG','_blank')">
+    <img src="thumbs/CFZP9515.jpg" alt="CFZP9515.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">CFZP9515.JPG</div>
+      <div class="meta">1080×1620 · 110KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/GUJT1049.JPG','_blank')">
+    <img src="thumbs/GUJT1049.jpg" alt="GUJT1049.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">GUJT1049.JPG</div>
+      <div class="meta">810×847 · 77KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/ILFH3870.JPG','_blank')">
+    <img src="thumbs/ILFH3870.jpg" alt="ILFH3870.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">ILFH3870.JPG</div>
+      <div class="meta">1279×1706 · 607KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/JHDL5113.JPG','_blank')">
+    <img src="thumbs/JHDL5113.jpg" alt="JHDL5113.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">JHDL5113.JPG</div>
+      <div class="meta">1000×1537 · 609KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/JMAU0585.JPG','_blank')">
+    <img src="thumbs/JMAU0585.jpg" alt="JMAU0585.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">JMAU0585.JPG</div>
+      <div class="meta">798×988 · 64KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/KMCI2209.JPG','_blank')">
+    <img src="thumbs/KMCI2209.jpg" alt="KMCI2209.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">KMCI2209.JPG</div>
+      <div class="meta">1000×666 · 309KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/LTRK2012.JPG','_blank')">
+    <img src="thumbs/LTRK2012.jpg" alt="LTRK2012.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">LTRK2012.JPG</div>
+      <div class="meta">1000×666 · 356KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/LVPW5829.JPG','_blank')">
+    <img src="thumbs/LVPW5829.jpg" alt="LVPW5829.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">LVPW5829.JPG</div>
+      <div class="meta">1000×1000 · 90KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/MHWG4683.JPG','_blank')">
+    <img src="thumbs/MHWG4683.jpg" alt="MHWG4683.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">MHWG4683.JPG</div>
+      <div class="meta">652×710 · 70KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/OHGY7433.JPG','_blank')">
+    <img src="thumbs/OHGY7433.jpg" alt="OHGY7433.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">OHGY7433.JPG</div>
+      <div class="meta">800×533 · 190KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/PIAY8983.JPG','_blank')">
+    <img src="thumbs/PIAY8983.jpg" alt="PIAY8983.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">PIAY8983.JPG</div>
+      <div class="meta">750×467 · 115KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/PUCM7747.JPG','_blank')">
+    <img src="thumbs/PUCM7747.jpg" alt="PUCM7747.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">PUCM7747.JPG</div>
+      <div class="meta">1280×814 · 421KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/QBRG4567.JPG','_blank')">
+    <img src="thumbs/QBRG4567.jpg" alt="QBRG4567.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">QBRG4567.JPG</div>
+      <div class="meta">1080×1807 · 373KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/RPLR5553.JPG','_blank')">
+    <img src="thumbs/RPLR5553.jpg" alt="RPLR5553.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">RPLR5553.JPG</div>
+      <div class="meta">1000×1500 · 595KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/RSZC8939.JPG','_blank')">
+    <img src="thumbs/RSZC8939.jpg" alt="RSZC8939.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">RSZC8939.JPG</div>
+      <div class="meta">793×1441 · 252KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/TKGM9482.JPG','_blank')">
+    <img src="thumbs/TKGM9482.jpg" alt="TKGM9482.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">TKGM9482.JPG</div>
+      <div class="meta">800×527 · 223KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/TOVP3447.JPG','_blank')">
+    <img src="thumbs/TOVP3447.jpg" alt="TOVP3447.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">TOVP3447.JPG</div>
+      <div class="meta">1000×666 · 309KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/VAHZ8989.JPG','_blank')">
+    <img src="thumbs/VAHZ8989.jpg" alt="VAHZ8989.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">VAHZ8989.JPG</div>
+      <div class="meta">1080×1080 · 141KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/VIJJ3578.JPG','_blank')">
+    <img src="thumbs/VIJJ3578.jpg" alt="VIJJ3578.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">VIJJ3578.JPG</div>
+      <div class="meta">1000×1500 · 102KB</div>
+    </div>
+  </div>
+  <div class="card" onclick="window.open('file:///G\兰花\/YJVZ3372.JPG','_blank')">
+    <img src="thumbs/YJVZ3372.jpg" alt="YJVZ3372.JPG" loading="lazy">
+    <div class="info">
+      <div class="name">YJVZ3372.JPG</div>
+      <div class="meta">1000×666 · 388KB</div>
+    </div>
+  </div>
+</div>
+<div class="status-bar">🦞 Eastern Orchid · 缩略图索引 · 共 52 张照片 · 生成于 2026/8/1 18:36:33</div>
+</body>
+</html>
